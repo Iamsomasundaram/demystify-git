@@ -1,19 +1,24 @@
 # Demystify Git
 
-### You can refer the following links to learn Git
+## Resources
+
+### Learning Git
 
 - https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud
 - https://youtu.be/8KCQe9Pm1kg
 - https://youtu.be/2sjqTHE0zok
 
-### Few popular books to refer
+### Books
 
 | [<img src="https://user-images.githubusercontent.com/45349552/223785088-9aae19b6-3b2a-4877-9b2c-daa1b2000eff.png" width="150">](https://git-scm.com/book/en/v2) | [<img src="https://user-images.githubusercontent.com/45349552/235899467-ba85628c-4141-457f-b9e3-adb846cd1868.png" width="150">](https://www.amazon.com/Professional-Git-Brent-Laster/dp/111928497X) | [<img src="https://user-images.githubusercontent.com/45349552/235899821-e7a921ca-01cb-461e-af21-a7edb05afba6.png" width="150">](https://www.amazon.com/Rys-Git-Tutorial-Ryan-Hodson-ebook/dp/B00QFIA5OC) |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
-### Few public repos to practice git commands
+### Practice Repositories
 
-### Create/Setuping up a repo
+- [GitHub Training Kit](https://github.com/github/training-kit)
+- [Git Exercises](https://gitexercises.fracz.com/)
+
+### Creating and Setting up a Repository
 
 | Commands                   | Description                                     |
 | -------------------------- | ----------------------------------------------- |
@@ -22,7 +27,7 @@
 | git config --edit          | Update config values                            |
 | git config --global --edit | To update name and email                        |
 
-### Browse
+### Browsing the Repository
 
 | Commands                                                           | Description                                                                            |
 | ------------------------------------------------------------------ | -------------------------------------------------------------------------------------- |
@@ -51,7 +56,7 @@
 | git rm file                                                        | Remove file from working directory                                                     |
 | git grep                                                           | Search working directory                                                               |
 
-### Revert/Undoing
+### Reverting and Undoing Changes
 
 | Commands                                            | Description                                                              |
 | --------------------------------------------------- | ------------------------------------------------------------------------ |
@@ -69,17 +74,7 @@
 | git show commit_id -- file_name &#124; git apply -R | Reverting a file from a commit                                           |
 | git apply -R patch.diff                             | Reverting diffs                                                          |
 
-### Useful Commands
-
-| Commands                                            | Description                                                       |
-| --------------------------------------------------- | ----------------------------------------------------------------- |
-| git command --help                                  | When in doubt, use git help                                       |
-| git log --oneline                                   | Show a list of commits in a repository in a more summarised way   |
-| git shortlog -s -n                                  | List of authors and commits to a repository sorted alphabetically |
-| git commit --amend                                  | To amend the last commit                                          |
-| git config --global alias.<new_name> <git_commands> | To create alias                                                   |
-
-### Branch
+### Managing Branches
 
 | Commands                        | Description                                                                                      |
 | ------------------------------- | ------------------------------------------------------------------------------------------------ |
@@ -93,7 +88,7 @@
 | git branch _new_branch_         | Create branch named new_branch based on the HEAD                                                 |
 | git branch -d branch_name       | Remove selected branch, if it is already merged into any other. -D instead of -d forces deletion |
 
-### Publish
+### Publishing Changes
 
 | Commands                              | Description                                                          |
 | ------------------------------------- | -------------------------------------------------------------------- |
@@ -111,14 +106,14 @@
 | git cherry-pick commit_id             | Pick a commit from one branch and apply it onto another              |
 | git cherry-pick commit_id --no-commit | Pick a commit from one branch and apply it onto another dont commit  |
 
-### Synchronize/Update
+### Synchronizing and Updating
 
 | Commands  | Description                                                                       |
 | --------- | --------------------------------------------------------------------------------- |
 | git fetch | To download contents from a remote repository                                     |
 | git pull  | To update your current HEAD branch with the latest changes from the remote server |
 
-### Temporary store
+### Storing Changes Temporarily
 
 | Commands                                   | Description                                                             |
 | ------------------------------------------ | ----------------------------------------------------------------------- |
@@ -134,12 +129,21 @@
 | git stash -u/git stash --include-untracked | Command lets us stash untracked files and doesn't touches ignored files |
 | git stash --all                            | Stashes all untracked and ignored files                                 |
 
-### Conflicts
+### Resolving Conflicts
 
-| Commands | Description |
-| -------- | ----------- |
-| git diff --name-only --diff-filter=U | Show conflicted files alone |
-| git log --merge | Produce a log with a list of commits that conflict between the merging branches |
-| git merge --abort | To abort merge process |
-| git merge --no-commit | To simply prevent the merge commit to occur |
+| Commands                             | Description                                                                     |
+| ------------------------------------ | ------------------------------------------------------------------------------- |
+| git diff --name-only --diff-filter=U | Show conflicted files alone                                                     |
+| git log --merge                      | Produce a log with a list of commits that conflict between the merging branches |
+| git merge --abort                    | To abort merge process                                                          |
+| git merge --no-commit                | To simply prevent the merge commit to occur                                     |
 
+### Useful Commands
+
+| Commands                                            | Description                                                       |
+| --------------------------------------------------- | ----------------------------------------------------------------- |
+| git command --help                                  | When in doubt, use git help                                       |
+| git log --oneline                                   | Show a list of commits in a repository in a more summarised way   |
+| git shortlog -s -n                                  | List of authors and commits to a repository sorted alphabetically |
+| git commit --amend                                  | To amend the last commit                                          |
+| git config --global alias.<new_name> <git_commands> | To create alias                                                   |
